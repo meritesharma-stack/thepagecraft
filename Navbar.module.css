@@ -1,0 +1,23 @@
+.toggle {
+  position: fixed;
+  bottom: 32px;
+  right: 96px;
+  z-index: 900;
+  width: 52px; height: 52px;
+  border-radius: 50%;
+  background: rgba(147,51,234,0.25);
+  border: 1px solid rgba(147,51,234,0.5);
+  color: var(--white);
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+.toggle:hover { background: rgba(147,51,234,0.4); transform: scale(1.08); }
+
+@media (max-width: 640px) {
+  .toggle {
+    bottom: 24px;
+    right: 86px;
+    width: 46px; height: 46px;
+  }
+}
